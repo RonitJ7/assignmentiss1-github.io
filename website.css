@@ -1,0 +1,382 @@
+:root {
+    --link-color: white;
+    --background-color: black;
+    --background-blogs: rgb(64, 62, 62);
+    --heart-background: var(--link-color);
+}
+
+.light-mode {
+    --link-color: black;
+    --background-color: white;
+    --background-blogs: rgb(194, 193, 193);
+    --heart-background: var(--link-color);
+}
+
+.change-like {
+    --heart-background: red;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.7s;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#about-me:hover,
+#Education:hover,
+#Achievements:hover,
+#Blogs:hover,
+#Skills:hover,
+.button-styling:hover,
+.socials-total:hover,
+.socials-flexbox:hover,
+.blogs-flexbox:hover,
+.blogs:hover {
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-links:hover {
+    transform: scale(1.10);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-flexbox {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 520px) {
+    .navbar-flexbox {
+        flex-wrap: wrap;
+        height: 12vh;
+    }
+}
+
+.navbar-links {
+    font-size: 135%;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.part-header {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--link-color);
+}
+
+.images {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+
+.darkmode-images {
+    object-fit: cover;
+    height: 6vh;
+}
+
+.aboutme-flexbox {
+    display: flex;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutme-flexbox {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.aboutme-heading {
+    width: 40vw;
+    justify-content: right;
+    color: var(--link-color);
+    font-size: 135%;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutme-flexbox {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.aboutme-image {
+    width: 35vw;
+}
+
+.aboutme-content {
+    font-family: cursive;
+    font-size: 135%;
+    color: grey;
+}
+
+.education-flexbox {
+    height: auto;
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+}
+
+.education-heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--link-color);
+}
+
+.education-content {
+    font-size: 125%;
+    font-family: sans-serif;
+    font-style: bold;
+    color: grey;
+}
+
+.achievements-flexbox {
+    height: auto;
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+}
+
+.achievements-text {
+    font-size: 140%;
+    color: grey;
+}
+
+.skills-flexbox {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 700px) {
+    .skills-flexbox {
+        flex-wrap: wrap;
+    }
+}
+
+.skills-heading {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;
+}
+
+.skills-content {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    font-family: sans-serif;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+    .skills-content {
+        flex-wrap: wrap;
+    }
+}
+
+.skills-text {
+    font-size: 125%;
+    text-align: left;
+}
+
+.button-styling {
+    width: auto;
+    height: 6lvh;
+    background-color: rgb(184, 137, 145);
+    font-size: 150%;
+    color: var(--link-color);
+}
+
+.blogs-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+.socials-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .socials-total {
+        flex-wrap: wrap;
+    }
+}
+
+.blogs-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.blogs {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5%;
+    background-color: var(--background-blogs);
+    max-width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-header {
+    font-size: 130%;
+    color: var(--link-color);
+}
+
+.blog-content {
+    font-size: 130%;
+    color: grey;
+}
+
+.socials-flexbox {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+    .socials-flexbox {
+        flex-wrap: wrap;
+    }
+}
+
+.socials-links {
+    justify-content: flex-start;
+    width: 10vh;
+}
+
+.blog-body {
+    background-color: var(--background-color);
+}
+
+.blog-overall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1vw;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    align-items: space-around;
+    width: 70vw;
+    padding-left: 4%;
+    background-color: var(--background-blogs);
+}
+
+
+.blog-heading {
+    text-align: center;
+    font-size: 150%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: var(--link-color);
+}
+
+.blog-text {
+    font-size: 140%;
+    font-family: cursive;
+    color: grey;
+}
+
+.align-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fa-heart {
+    color: var(--heart-background);
+}
+
+.heart {
+    padding-right: 5%;
+}
+
+.likes-container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+
+.like-count {
+    font-size: 150%;
+    color: var(--link-color);
+    margin-left: 50%;
+}
+
+.comments-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 2vw;
+}
+
+.comments-heading {
+    text-align: left;
+    color: var(--link-color);
+    font-size: 200%;
+    padding-bottom: 2vw;
+}
+
+.comments-body {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: space-around;
+}
+
+.comment-user {
+    color: rgb(82, 82, 248);
+}
+
+.comments-text {
+    color: grey;
+    background-color: var(--background-blogs);
+    font-size: 125%;
+    font-family: cursive;
+    padding-bottom: 2vw;
+}
+
+.comments-count {
+    color: var(--link-color);
+    font-size: 140%;
+}
